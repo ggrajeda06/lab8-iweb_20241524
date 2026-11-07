@@ -23,13 +23,14 @@ public class Cancion {
      */
     public String getDuracionFormateada(int duracionSeg) {
         int minutos = 0;
-        int segundos= 0
+        int segundos= 0;
         while(duracionSeg>60){
             minutos = minutos + 1;
             duracionSeg = duracionSeg - 60;
         }
         segundos = duracionSeg;
-        return minutos, segundos;
+
+        return minutos + ":" + segundos;
     }
 
     public int getIdCancion() {
